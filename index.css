@@ -1,0 +1,390 @@
+.sosial_media_icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    img{
+    width: 35px;
+    height: 36px;
+    object-fit: cover;
+        }
+
+}
+.Navigate-foot{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+.Navigate-foot a{
+    font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: rgb(72, 65, 98);
+   font-weight: 500;
+}
+.Navigate-foot a:hover{
+    color: #007bff;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0%;
+    margin: 40px 0;
+    justify-self:auto
+    
+}
+.nav a{
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+}
+.nav a:hover{
+    color: #007bff;
+}
+.header{
+    padding: 15px;
+}
+.header_image{
+     text-align: center;
+    img {
+        width: 300px;
+ max-width: auto; 
+  height: auto;
+    }
+    
+}
+.content{
+    flex: 1;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    display: flex;           
+  gap: 20px;              
+  align-items: flex-start;
+  img{
+
+  align-items: flex-start;
+  width: 500px;
+  }
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+}
+.content h1{
+     
+    margin-bottom: 50px ;        /* отступ сверху и снизу */
+    
+
+}
+
+.footer{
+    margin-top: 100px;
+    padding: 30px;
+     font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+}
+.footer p{
+    left: 50%;                   
+     
+  max-width: 50%;                 
+  
+}
+
+
+
+
+
+
+
+
+.web-container{
+     display: flex;
+      gap: 20px; 
+      justify-content: center; 
+      margin-top: 50px;
+      img {
+        width: 300px;
+        height: 250px;
+        flex-wrap: wrap;
+      }
+}
+.catalog {
+    position: relative;
+      display: inline-block;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 12px;
+}
+.catalog img{
+     width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+      filter: brightness(50%);
+       transition: filter 0.4s ease;
+}
+.catalog:hover img{
+    filter: brightness(100%);
+}
+.catalog h3{
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+       font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-weight: 900px;
+   
+
+}
+
+
+
+
+
+
+.carousel-wrapper {
+    display: flex;
+justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 500;}
+
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  width: 400px; 
+  height: 620px;                /* горизонтальная прокрутка */
+  scroll-snap-type: x mandatory;    /* прилипание к началу карточки */
+  padding: 10px;
+  -webkit-overflow-scrolling: touch;
+  flex: 600px;
+  
+}
+
+.item {
+  flex: 0 0 320px;                  /* ширина карточки = 635px */
+  scroll-snap-align: start;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.item img {
+  width: 320px;                     /* фиксированная ширина */
+  height: 600px;                   /* фиксированная высота */
+  object-fit: cover;                /* фото обрезается, но не искажается */
+  border-radius: 10px;
+  display: block;
+}
+.carousel-wrapper {
+  flex: 0 0 400px;             /* фиксированная ширина карусели */
+  overflow-x: auto;            /* горизонтальная прокрутка */
+}
+
+.item p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+.carousel-2 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;                 /* горизонтальная прокрутка */
+  scroll-snap-type: x mandatory;    /* прилипание к началу карточки */
+  padding: 10px;
+  -webkit-overflow-scrolling: touch;/* плавный скролл на iOS */
+  flex: 100%;
+
+}
+
+.item-2 {
+  flex: 0 0 672px;                  /* ширина карточки = 635px */
+  scroll-snap-align: start;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.item-2 img {
+  width: 672px;                     /* фиксированная ширина */
+  height:381 px;                   /* фиксированная высота */
+  object-fit: cover;                /* фото обрезается, но не искажается */
+  border-radius: 10px;
+  display: block;
+}
+
+.item-2 {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.carousel-3 {
+  width: 300px;              /* фиксированная ширина карусели */
+  height: 600px;             /* ограниченное окно карусели */
+  overflow-y: auto;          /* вертикальная прокрутка */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;                 /* расстояние между элементами */
+  padding: 10px;
+  border: 1px solid #ccc;    /* рамка для наглядности */
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  flex: 100%;
+}
+
+.item-3 {
+  text-align: center;
+}
+
+.item-3 img {
+  width: 100%;               /* одинаковая ширина для всех картинок */
+  height: auto;              /* сохраняем пропорции */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.item-3 p {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+.content-UX{
+     font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+   
+}
+
+/* Media query для экранов до 600px */
+@media (max-width: 600px) {
+
+  /* Социальные иконки */
+  .sosial_media_icons {
+    display: flex;          /* обязательно, если не задано глобально */
+    flex-direction: row;    /* горизонтально */
+    justify-content: center;/* центрируем весь блок по горизонтали */
+    align-items: center;    /* вертикальное выравнивание иконок */
+    gap: 10px;              /* промежутки между иконками */
+  }
+  .sosial_media_icons img {
+    width: 25px;
+    height: 26px;
+  }
+
+  /* Навигация */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  /* Заголовок / изображение */
+  .header_image img {
+    width: 200px;  /* уменьшаем под мобильные */
+    height: auto;
+  }
+
+  /* Контент основной */
+  .content {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+  .content img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Карусели горизонтальные */
+  .carousel, .carousel-2 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .item, .item-2 {
+    width: 100%;
+    height: auto;
+  }
+  .item img, .item-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Карусель вертикальная */
+  .carousel-3 {
+    width: 100%;
+    height: 400px; /* ограничиваем по высоте для мобильного */
+  }
+  .item-3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Футер */
+  .footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .footer p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Каталог / карточки */
+  .catalog {
+    width: 90%;
+    height: auto;
+  }
+  .catalog img {
+    width: 100%;
+    height: auto;
+  }
+  .catalog h3 {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  /* Сетки изображений */
+  .web-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .web-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
