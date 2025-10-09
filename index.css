@@ -43,6 +43,23 @@
 .nav a:hover{
     color: #007bff;
 }
+
+.burger{
+  display: flex;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+.burger span{
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: black;
+}
+
 .header{
     padding: 15px;
 }
