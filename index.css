@@ -43,7 +43,9 @@
 }
 
 /*header*/
-
+.open{
+  display: flex !important;
+}
 .header{
     padding: 15px;
     display: flex;
@@ -117,13 +119,18 @@ bottom: 50%;
 transform: rotate(45deg) translate(0, 50%);
 }
 @media (max-width: 900px){
-  .burger{display: flex;}
+  .burger{
+    display: flex;
+    cursor: pointer;}
+  .nav.active {
+    display: flex;
+  }
   .nav{
     display: none;
     flex-direction: column;
     position: fixed;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     top: 0; bottom: 0; left: 0;right: 0;
     z-index: 50;
     overflow-y:auto;
@@ -132,9 +139,19 @@ transform: rotate(45deg) translate(0, 50%);
     animation: burgerAnimation 0.4s;
   }
   .nav ul{
+    display: flex;
     flex-direction: column;
     row-gap: 30px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-self: center;
   }
+}
+@keyframes burgerAnimation{
+  from {opacity: 0}
+  to{opacity: 1}
 }
 
 
@@ -369,16 +386,7 @@ justify-content: space-between;
     height: 26px;
   }
 
-  /* Навигация */
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px 0;
-    text-align: center;
-  }
-  .nav a {
-    font-size: 0.9rem;
-  }
+
 
   /* Заголовок / изображение */
   .header_image img {
@@ -428,9 +436,11 @@ justify-content: space-between;
   .footer {
     padding: 20px 10px;
     text-align: center;
+    padding: 20px 10px;
   }
   .footer p {
-    max-width: 90%;
+    gap: 10px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
