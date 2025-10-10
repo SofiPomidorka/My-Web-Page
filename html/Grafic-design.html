@@ -11,15 +11,9 @@
 <body>
     <header class="header">
         <div class="header_image">
-        <a href="index.html">
-            <img 
-             src="../logolong.png"
-             alt="Logo.png"
-             title="Home page"
-             width="437"
-             height="145"
-            />
-        </a>
+            <a href="index.html">
+                <img src="../logolong.png" alt="Logo.png" title="Home page" width="437" height="145" />
+            </a>
         </div>
         <nav>
             <ul class="nav">
@@ -28,11 +22,11 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
-         <div class="burger">
+        <div class="burger">
             <span></span>
             <script src="burger.js"></script>
         </div>
-     </header>
+    </header>
     <main class="content-UX">
 
         <h1>Logo</h1>
@@ -80,22 +74,17 @@
             <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
             <div class="logo"></div>
             <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../projects/Uuniro_games/tokyo1.png"></div>
-                    <div class="swiper-slide"><img src="../projects/Uuniro_games/tokyo2.png"></div>
-                    <div class="swiper-slide"><img src="../projects/Uuniro_games/tokyo3.png"></div>
-                    <div class="swiper-slide"><img src="../projects/Uuniro_games/tokyo4.png"></div>
-
+                <div class="swips">
+                    <div class="swipe"><img src="../projects/Uuniro_games/tokyo1.png" width="600" ></div>
+                    <div class="swipe"><img src="../projects/Uuniro_games/tokyo2.png" width="600"></div>
+                    <div class="swipe"><img src="../projects/Uuniro_games/tokyo3.png" width="600"></div>
+                    <div class="swipe"><img src="../projects/Uuniro_games/tokyo4.png" width="600"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <button class="prev1">&#10094;</button>
+                <button class="next1">&#10095;</button>
             </div>
-            <script>
-                new Swiper('.swiper', {
-                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-                    loop: true
-                });
-            </script>
+
+
             <div class="Lodo.Description">
                 <h3>TOKYO SUN</h3>
                 <h4>App Description</h4>
@@ -123,41 +112,42 @@
 
 
 
-
+<script src="swiper.js"></script>
     </main>
     <footer class="footer">
-            <div class="About-me">
-                <h3>About me</h3>
-                <p>I am a web developer with experience in <b>HTML, CSS, Tilda, WordPress</b>, and graphic design. I am proficient in Adobe products (<b>Photoshop, Illustrator, After Effects, XD, etc.</b>) and also use Flutter Flow for application development.
+        <div class="About-me">
+            <h3>About me</h3>
+            <p>I am a web developer with experience in <b>HTML, CSS, Tilda, WordPress</b>, and graphic design. I am
+                proficient in Adobe products (<b>Photoshop, Illustrator, After Effects, XD, etc.</b>) and also use
+                Flutter Flow for application development.
 
-                </p>
-            </div>
-            <div class="nav-foot">
-                <p>Navigate</p>
-                <ul class="Navigate-foot">
-                 <li><a href="index.html">Home Page</a></li>
-                 <li><a href="projects.html">Progects</a></li>
-                 <li><a href="contacts.html">Contacts</a></li>
-                </ul>
-            </div>
-            <div>
-             <h3>Social media</h3>
-             <ul class="sosial_media_icons">
+            </p>
+        </div>
+        <div class="nav-foot">
+            <p>Navigate</p>
+            <ul class="Navigate-foot">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Social media</h3>
+            <ul class="sosial_media_icons">
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=100092485563781" target="_blank" rel="noopener noreferrer">
-                        <img 
-                         src="../social media icons/facebook.png"
-                         alt="facebook_icon"/>
+                    <a href="https://www.facebook.com/profile.php?id=100092485563781" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../social media icons/facebook.png" alt="facebook_icon" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/gastrischim/" target="_blank" rel="noopener noreferrer">
-                        <img
-                        src="../social media icons/instagram.png" alt="instagram_icon">
+                        <img src="../social media icons/instagram.png" alt="instagram_icon">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/sofia-maksimova-digital-gastri/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/sofia-maksimova-digital-gastri/" target="_blank"
+                        rel="noopener noreferrer">
                         <img src="../social media icons/link.png" alt="linkedin_icon">
                     </a>
                 </li>
@@ -181,9 +171,9 @@
                         <img src="../social media icons/youtube.png" alt="Youtube_icon">
                     </a>
                 </li>
-             </ul>
-            </div>
-        </footer>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
